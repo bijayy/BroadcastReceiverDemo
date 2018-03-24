@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 	}
 
 	fun sendBroadCast(view: View) {
-
 		val intent = Intent(this, MyBroadCastReceiver::class.java)
 		sendBroadcast(intent)
 

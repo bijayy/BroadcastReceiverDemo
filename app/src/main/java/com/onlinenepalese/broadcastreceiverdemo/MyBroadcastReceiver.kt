@@ -15,6 +15,7 @@ class MyBroadCastReceiver: BroadcastReceiver() {
 
 	override fun onReceive(context: Context?, intent: Intent?) {
 		Log.d(TAG, "onReceive() running in thread: ${Thread.currentThread().name}")
+
 		Toast.makeText(context, "BroadCast Received", Toast.LENGTH_SHORT).show()
 	}
 
